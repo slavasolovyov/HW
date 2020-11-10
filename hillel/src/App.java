@@ -4,6 +4,11 @@ public class App {
     Scanner scanner = new Scanner(System.in);
 
     public void averageSumOfArr(){
+        String nameofCurrMethod = Thread.currentThread()
+                .getStackTrace()[1]
+                .getMethodName();
+        System.out.print("Name of current method: "
+                + nameofCurrMethod);
         System.out.println("Provide total n. of elements");
         int size = scanner.nextInt();
         if (size < 2){
@@ -21,6 +26,11 @@ public class App {
         System.out.println("Avarege is: " + average);
     }
     public void averageSumOfTwo(){
+        String nameofCurrMethod = Thread.currentThread()
+                .getStackTrace()[1]
+                .getMethodName();
+        System.out.println("Name of current method: "
+                + nameofCurrMethod);
         int size = 2;
         int[] arr = new int[size];
         int summ = 0;
@@ -34,6 +44,11 @@ public class App {
         System.out.println("Avarege is: " + average);
     }
     public void deposit() {
+        String nameofCurrMethod = Thread.currentThread()
+                .getStackTrace()[1]
+                .getMethodName();
+        System.out.println("Name of current method: "
+                + nameofCurrMethod);
         System.out.println("Provide amount of deposit");
         double amount = scanner.nextDouble();
         if (amount < 0) {
