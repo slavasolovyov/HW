@@ -2,15 +2,15 @@ package Animals_HW5;
 
 public class Croco extends WildAnimals{
     public Croco(boolean predator) {
-        this.setPredator(predator);
+        this.setIspredator(predator);
     }
     @Override
-    public void setPredator(boolean predator) {
-        super.setPredator(predator);
+    public void setIspredator(boolean ispredator) {
+        super.setIspredator(ispredator);
     }
 
     @Override
-    public boolean isPredator() {
-        return super.isPredator();
+    public boolean isIspredator() {
+        return super.isIspredator();
     }
 }

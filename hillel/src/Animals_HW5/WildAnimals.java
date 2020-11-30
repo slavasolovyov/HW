@@ -1,19 +1,19 @@
 package Animals_HW5;
 
 public class WildAnimals extends Animals{
-   private boolean isPredator;
+   private boolean ispredator;
 
-    public void setPredator(boolean predator) {
-        isPredator = predator;
+    public void setIspredator(boolean ispredator) {
+        this.ispredator = ispredator;
     }
 
-    public boolean isPredator() {
-        return isPredator;
+    public boolean isIspredator() {
+        return ispredator;
     }
 
     @Override
     public String voice() {
-        if (isPredator()){
+        if (isIspredator()){
             return "Hello, I am a wild animal and I am angry";
         }
         else return "Hello, I am a wild animal";
